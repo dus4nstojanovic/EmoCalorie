@@ -1,0 +1,2 @@
+{:dev-env-vars  {:env {:database-url "postgres://emo_calorie_user:password123@127.0.0.1:5432/emo_calorie_db"}}
+ :test-env-vars {:env {:database-url "postgres://emo_calorie_user:password123@127.0.0.1:5432/emo_calorie_db"}}}

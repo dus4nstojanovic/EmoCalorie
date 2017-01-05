@@ -4,7 +4,7 @@
 
 (defn example-get [request]
   (common-layout
-    [:p "Example GET"]))
+    [:p]))
 
 (defn example-post [request]
   (let [post-value (get-in request [:params :example-post])]

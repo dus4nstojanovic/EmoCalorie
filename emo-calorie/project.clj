@@ -23,7 +23,6 @@
                                          [ring-mock "0.3.0"]]
 
                           :plugins [[lein-midje "3.2.1"]]}
-             ;; Set these in ./profiles.clj
              :test-env-vars {}
              :dev-env-vars  {}
              :test [:test-local :test-env-vars]

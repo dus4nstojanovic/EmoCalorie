@@ -6,12 +6,43 @@ $(document).ready(function() {
     $("#smiley").on("mouseover", toggleSmileyHover);
     $("#smiley").on("mouseout", toggleSmileyHover);
     $("#smiley").on("click", addFoodModal);
-    $("#addFood").on("click", addFood)
+    $("#addFood").on("click", addFood);
+    $("#setCaloriesToday").on("click", setCalories);
 
+    setGoalModal();
 
     $('[data-toggle="tooltip"]').tooltip();
     setToastrOptions();
 });
+
+function setCalories() {
+    var $txtCaloriesToday = $("#txtCaloriesToday");
+
+    if ($txtCaloriesToday.val().length <= 0) {
+        toastr.error("Calories goal is required field.", "Couldn't set goal");
+        return;
+    }
+
+    //todo: we could add number spinner for calories goal text field
+    if(isNaN(Number($txtCaloriesToday.val()))) {
+        toastr.error("Calories goal must be a number", "Couldn't set goal");
+        return;
+    }
+
+    //todo: do ajax logic here...
+
+    //todo: onSuccess
+    toastr.success("It's Up To You.", "Good luck");
+    $("#setGoalModal").modal("toggle");
+}
+
+function setGoalModal() {
+    //check if already is set
+    var isSet = false;
+    if (!isSet) {
+        $("#setGoalModal").modal("toggle");
+    }
+}
 
 function toggleSmileyHover() {
     var $balloon = $("#talking-container");

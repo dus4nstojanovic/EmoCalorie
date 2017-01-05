@@ -38,7 +38,7 @@
           [:td "123"]
           ]]]]]
 
-     ;modal dialog
+     ;modal dialog - add food
      [:div#addFoodModal.modal.fade {:role "dialog"}
       [:div.modal-dialog
        [:div.modal-content
@@ -54,6 +54,19 @@
         [:div.modal-footer
          [:button#addFood.btn.btn-primary {:type "button"} "Add"]
          [:button.btn.btn-default {:type "button" :data-dismiss "modal"} "Close"]]]]]
+
+     ;modal dialog - set goal
+     [:div#setGoalModal.modal.fade {:role "dialog" :data-backdrop "static" :data-keyboard "false"}
+      [:div.modal-dialog
+       [:div.modal-content
+        [:div.modal-header
+         [:h4.modal-title
+          [:i.fa.fa-bullseye.margin-r-5 {:aria-hidden "true"}] "How much calories will you consume today?"]]
+        [:div.modal-body
+         [:div.form-group
+          [:input#txtCaloriesToday.form-control {:placeholder "Calories..."}]]]
+        [:div.modal-footer
+         [:button#setCaloriesToday.btn.btn-primary {:type "button"} "Set"]]]]]
 
      ;spinner
      [:img#loading {:src "/images/pacman.gif"}]

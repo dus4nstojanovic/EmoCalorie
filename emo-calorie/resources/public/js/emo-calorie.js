@@ -28,20 +28,61 @@ function setCalories() {
         toastr.error("Calories goal must be a number", "Couldn't set goal");
         return;
     }
+    $("#loading").show();
+    $.ajax({
+        url: "/goal",
+        method: "POST",
+        data: {goal: $txtCaloriesToday.val()}
+    }).done(function() {
+        toastr.success("It's Up To You.", "Good luck");
+        $("#setGoalModal").modal("toggle");
+        var $caloriesToday = $("#caloriesToday");
+        $caloriesToday.text($txtCaloriesToday.val());
+        animateOpacity($caloriesToday, 0, 1000);
+    }).fail(function() {
+        toastr.error("We couldn't set a goal for today. Go and eat. Enjoy!", "Error");
+    }).always(function() {
+        $("#loading").hide();
+    });
+}
 
-    //todo: do ajax logic here...
-
-    //todo: onSuccess
-    toastr.success("It's Up To You.", "Good luck");
-    $("#setGoalModal").modal("toggle");
+function animateOpacity($target, value, speed) {
+    $target.animate({
+        "opacity": value
+    }, speed / 2, function () {
+        $target.animate({
+            "opacity": "1"
+        }, speed / 2)
+    });
 }
 
 function setGoalModal() {
-    //check if already is set
-    var isSet = false;
-    if (!isSet) {
-        $("#setGoalModal").modal("toggle");
-    }
+    $("#loading").show();
+    $.ajax({
+        url: "/getgoal"
+    }).done(function (data) {
+        if (data === "") {
+            $("#setGoalModal").modal("toggle");
+        } else {
+            var status = $.parseJSON(data);
+            var date = moment(status.sdate, "MM/DD/YYYY").startOf('day');
+            var today = moment().startOf('day');
+            var isAfter = today.isAfter(date);
+            if(isAfter) {
+                $("#setGoalModal").modal("toggle");
+            } else {
+                toastr.info("It's Up To You.", "Remeber");
+                var $caloriesToday = $("#caloriesToday");
+                $caloriesToday.text(status.goal);
+                animateOpacity($caloriesToday, 0, 1000);
+            }
+        }
+
+    }).fail(function () {
+        toastr.error("Couldn't get a goal.", "Error");
+    }).always(function () {
+        $("#loading").hide();
+    });
 }
 
 function toggleSmileyHover() {
@@ -83,7 +124,7 @@ function validateFields() {
     var $calories = $("#txtCalories");
 
     if($calories.val().length <= 0) {
-        toastr.error("Food calories is required field.", "Couldn't add food")
+        toastr.error("Food calories is required field.", "Couldn't add food");
         isValid = false;
         return false;
     }
@@ -93,7 +134,7 @@ function validateFields() {
         isValid = false;
     }
 
-    return isValid
+    return isValid;
 }
 
 function setToastrOptions() {

@@ -14,6 +14,9 @@ body {
     border-radius: 50px;
     padding: 10px;
     box-shadow: 1px 1px 4px #38147d;
+    min-width: 90px;
+    min-height: 65.56px;
+    display: inline-block;
 }
 
 #smiley-row {

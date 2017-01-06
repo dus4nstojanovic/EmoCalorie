@@ -1,15 +1,30 @@
 (ns emo-calorie.routes.emo-calorie-routes
-  (:require [compojure.core :refer :all]
-            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]))
+  (:require [ring.util.response :as response]
+            [compojure.core :refer :all]
+            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]
+            [emo-calorie.models.query-defs :as query]
+            [clojure.data.json :as json])
+  (:import (java.time LocalDateTime)
+           (java.text SimpleDateFormat)
+           (java.util Date)))
 
-(defn example-get [request]
+(defn index-get [request]
   (common-layout
     [:p]))
 
-(defn example-post [request]
-  (let [post-value (get-in request [:params :example-post])]
-    (str "You posted: " post-value)))
+(defn get-goal [request]
+  (for [goal (query/get-goal-today)]
+    (json/write-str goal)))
+
+(defn post-goal [request]
+  (let [goal (get-in request [:params :goal])]
+    (query/clear-status!)
+    (query/insert-goal-today<! {
+                                :goal     (read-string goal)
+                                :sdate    (.format (SimpleDateFormat. "MM/dd/yyyy") (Date.))
+                                :calories 0})))
 
 (defroutes emo-calorie-routes
- (GET "/" [] example-get)
- (POST "/post" [] example-post))
+           (GET "/" [] index-get)
+           (GET "/getgoal" [] get-goal)
+           (POST "/goal" [] post-goal))

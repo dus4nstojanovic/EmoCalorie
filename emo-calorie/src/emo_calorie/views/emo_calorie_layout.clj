@@ -12,12 +12,13 @@
      (include-js "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
                  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
                  "/js/toastr.min.js"
+                 "/js/moment.js"
                  "/js/emo-calorie.js")]
     [:body
      [:div.container-fluid
       [:div#calories-row.row
        [:div.col-xs-4.col-xs-offset-4.text-center
-        [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Callories consumed today"} "1231"]]]
+        [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Callories consumed today"} "0"]]]
       [:div#smiley-row.row
        [:img#smiley {:src "/images/happy.png" :draggable "false" }]
        [:div#talking-container

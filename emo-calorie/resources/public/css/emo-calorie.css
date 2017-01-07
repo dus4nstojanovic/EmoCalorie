@@ -70,16 +70,24 @@ body {
     padding: 20px !important;
 }
 
-table th {
+#foodTable {
+    display: none;
+}
+
+#foodTable th {
     background-color: #c5e7f3;
     padding: 10px;
 }
 
-table th, table td {
+#foodTable td {
+    background-color: white;
+}
+
+#foodTable th, #foodTable td {
     text-align: center;
 }
 
-table>tbody>tr>td:nth-of-type(2)
+#foodTable>tbody>tr>td:nth-of-type(2)
 {
     text-align: left;
 }

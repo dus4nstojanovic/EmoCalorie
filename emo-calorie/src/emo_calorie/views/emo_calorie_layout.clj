@@ -18,7 +18,8 @@
      [:div.container-fluid
       [:div#calories-row.row
        [:div.col-xs-4.col-xs-offset-4.text-center
-        [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Callories consumed today"} "0"]]]
+        [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Calories to consume today"} "0"]
+        [:input#goalToday {:type "hidden" :value "0"}]]]
       [:div#smiley-row.row
        [:img#smiley {:src "/images/happy.png" :draggable "false" }]
        [:div#talking-container
@@ -26,18 +27,13 @@
         [:span#talking-balloon-text "FEED ME!"]
         ]]
       [:div#table-row.row
-       [:table.table.table-striped.table-bordered.table-hover.table-condensed
+       [:table#foodTable.table.table-striped.table-bordered.table-hover.table-condensed
         [:thead
          [:tr
-          [:th "123456"]
-          [:th "123445678910"]
-          [:th "12345678"]]]
-        [:tbody
-         [:tr
-          [:td "123"]
-          [:td "123"]
-          [:td "123"]
-          ]]]]]
+          [:th "Ordinal"]
+          [:th "Food name"]
+          [:th "Calories"]]]
+        [:tbody]]]]
 
      ;modal dialog - add food
      [:div#addFoodModal.modal.fade {:role "dialog"}

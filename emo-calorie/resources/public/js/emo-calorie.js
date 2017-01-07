@@ -142,15 +142,15 @@ function addFood() {
         url: "/food",
         method: "POST",
         data: { name: name, calories: calories, current: current }
-    }).done(function () {
+    }).done(function (id) {
         toastr.info("Yammiii!", "Mmmmmm...");
         $("#addFoodModal").modal("toggle");
         $("#txtCalories").val("");
         $("#txtFoodName").val("");
         setCaloriesToday(Number($("#caloriesToday").text()) - Number(calories));
         var nbr = $("#foodTable>tbody>tr").length + 1;
-        addFoodRow(0, name, calories); //todo: select and set id
-        animateOpacity($table, 0, 1000);
+        addFoodRow(id, name, calories);
+        animateOpacity($("#foodTable"), 0, 1000);
     }).fail(function () {
         toastr.error("We couldn't add your food. Sorry!", "Error");
     }).always(function () {
@@ -164,7 +164,7 @@ function addFoodRow (id, name, calories) {
     var $tbody = $("#foodTable>tbody");
 
     var $tr = $("<tr></tr>");
-    $tr.data("id", id);
+    $tr.attr("data-id", id);
     var nbr = $("#foodTable>tbody>tr").length + 1;
     var $tdNbr = $("<td></td>");
     $tdNbr.text(nbr);

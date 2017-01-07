@@ -26,12 +26,9 @@
       <file leaf-file-name="emo_calorie_routes.clj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emo_calorie/routes/emo_calorie_routes.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-              <folding>
-                <marker date="1483729900775" expanded="true" signature="0:405" ph="(ns emo-calorie.routes.emo-calorie-routes ...)" />
-                <marker date="1483729900775" expanded="true" signature="462:551" ph="(defn get-goal ...)" />
-              </folding>
+            <state relative-caret-position="726">
+              <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,8 +46,8 @@
       <file leaf-file-name="emo-calorie.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/public/js/emo-calorie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="152" column="40" lean-forward="false" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -75,9 +72,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
               <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-              <folding>
-                <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,8 +80,8 @@
       <file leaf-file-name="emo_calories.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emo_calorie/models/emo_calories.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="394">
+              <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -105,8 +100,8 @@
       <file leaf-file-name="emo_calorie_layout.clj" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/emo_calorie/views/emo_calorie_layout.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="242">
+              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -125,8 +120,8 @@
       <file leaf-file-name="emo-calorie.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/public/css/emo-calorie.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="581">
+              <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -146,6 +141,9 @@
     <findStrings>
       <find>caloriesToday</find>
       <find>deb</find>
+      <find>table</find>
+      <find>animateOpacity</find>
+      <find>addFoodRow</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -163,12 +161,12 @@
         <option value="$PROJECT_DIR$/profiles.clj" />
         <option value="$PROJECT_DIR$/src/emo_calorie/models/query_defs.clj" />
         <option value="$PROJECT_DIR$/test/emo_calorie/handler_test.clj" />
-        <option value="$PROJECT_DIR$/resources/public/css/emo-calorie.css" />
-        <option value="$PROJECT_DIR$/src/emo_calorie/models/emo_calories.sql" />
         <option value="$PROJECT_DIR$/project.clj" />
-        <option value="$PROJECT_DIR$/src/emo_calorie/routes/emo_calorie_routes.clj" />
         <option value="$PROJECT_DIR$/resources/public/js/moment.js" />
+        <option value="$PROJECT_DIR$/src/emo_calorie/models/emo_calories.sql" />
         <option value="$PROJECT_DIR$/src/emo_calorie/views/emo_calorie_layout.clj" />
+        <option value="$PROJECT_DIR$/resources/public/css/emo-calorie.css" />
+        <option value="$PROJECT_DIR$/src/emo_calorie/routes/emo_calorie_routes.clj" />
         <option value="$PROJECT_DIR$/resources/public/js/emo-calorie.js" />
       </list>
     </option>
@@ -206,8 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -389,7 +387,7 @@
       <recent name="C:\Users\Dusan\EmoCalorie\emo-calorie\src\emo_calorie" />
     </key>
   </component>
-  <component name="ReplState" timestamp="1483733433678">{:repl-history {:ide [], :local [&quot;(+ 1 3)&quot; &quot;(stop-server)&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))&quot; &quot;(defn get-goal [request]\n  (get (query/get-goal-today) :goal))&quot; &quot;(get-goal)&quot; &quot;(defn get-goal [request]\n  (get (query/get-goal-today) :goal)\n  :goal)&quot; &quot;(defn get-goal [request]\n  (get (query/get-goal-today) :goal)\n  (:goal))&quot; &quot; (get-goal)&quot; &quot;(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    goal))&quot; &quot;(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (get :goal goal)))&quot; &quot;(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (get goal :goal)))&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    goal))&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query]\n            [clojure.data.json :as json])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (json/write-str goal)))\n\n(defn post-goal [request]\n  (let [goal (get-in request [:params :goal])]\n    (query/clear-status!)\n    (query/insert-goal-today&lt;! {\n                                :goal     (read-string goal)\n                                :sdate    (.format (SimpleDateFormat. \&quot;MM/dd/yyyy\&quot;) (Date.))\n                                :calories 0})))\n\n(defroutes emo-calorie-routes\n           (GET \&quot;/\&quot; [] index-get)\n           (GET \&quot;/getgoal\&quot; [] get-goal)\n           (POST \&quot;/goal\&quot; [] post-goal))\n&quot; &quot;(get-goal [])&quot;], :remote []}}</component>
+  <component name="ReplState" timestamp="1483805098904">{:repl-history {:ide [], :local [&quot;(+ 1 3)&quot; &quot;(stop-server)&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))&quot; &quot;(defn get-goal [request]\n  (get (query/get-goal-today) :goal))&quot; &quot;(get-goal)&quot; &quot;(defn get-goal [request]\n  (get (query/get-goal-today) :goal)\n  :goal)&quot; &quot;(defn get-goal [request]\n  (get (query/get-goal-today) :goal)\n  (:goal))&quot; &quot; (get-goal)&quot; &quot;(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    goal))&quot; &quot;(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (get :goal goal)))&quot; &quot;(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (get goal :goal)))&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    goal))&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query]\n            [clojure.data.json :as json])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (json/write-str goal)))\n\n(defn post-goal [request]\n  (let [goal (get-in request [:params :goal])]\n    (query/clear-status!)\n    (query/insert-goal-today&lt;! {\n                                :goal     (read-string goal)\n                                :sdate    (.format (SimpleDateFormat. \&quot;MM/dd/yyyy\&quot;) (Date.))\n                                :calories 0})))\n\n(defroutes emo-calorie-routes\n           (GET \&quot;/\&quot; [] index-get)\n           (GET \&quot;/getgoal\&quot; [] get-goal)\n           (POST \&quot;/goal\&quot; [] post-goal))\n&quot; &quot;(get-goal [])&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query]\n            [clojure.data.json :as json])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (json/write-str goal)))\n\n(defn post-goal [request]\n  (let [goal (get-in request [:params :goal])]\n    (query/clear-status!)\n    (query/clear-food!)\n    (query/insert-goal-today&lt;! {\n                                :goal     (read-string goal)\n                                :sdate    (.format (SimpleDateFormat. \&quot;MM/dd/yyyy\&quot;) (Date.))\n                                :calories 0})))\n\n(defn post-food [request]\n  (let [name (get-in request [:params :name])\n        calories (get-in request [:params :calories])\n        current (get-in request [:params :current])]\n    (query/insert-food-today&lt;! {\n                                :name name\n                                :calories (read-string calories)})\n    (query/update-calories {:calories (- (read-string calories) (read-string current))})))\n\n(defroutes emo-calorie-routes\n           (GET \&quot;/\&quot; [] index-get)\n           (GET \&quot;/getgoal\&quot; [] get-goal)\n           (POST \&quot;/goal\&quot; [] post-goal)\n           (POST \&quot;/food\&quot; [] post-food))\n&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query]\n            [clojure.data.json :as json])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (json/write-str goal)))\n\n(defn post-goal [request]\n  (let [goal (get-in request [:params :goal])]\n    (query/clear-status!)\n    (query/clear-food!)\n    (query/insert-goal-today&lt;! {\n                                :goal     (read-string goal)\n                                :sdate    (.format (SimpleDateFormat. \&quot;MM/dd/yyyy\&quot;) (Date.))\n                                :calories 0})))\n\n(defn post-food [request]\n  (let [name (get-in request [:params :name])\n        calories (get-in request [:params :calories])\n        current (get-in request [:params :current])]\n    (query/insert-food-today&lt;! {\n                                :name name\n                                :calories (read-string calories)})\n    (query/update-calories! {:calories (+ (read-string current) (read-string calories))})))\n\n(defroutes emo-calorie-routes\n           (GET \&quot;/\&quot; [] index-get)\n           (GET \&quot;/getgoal\&quot; [] get-goal)\n           (POST \&quot;/goal\&quot; [] post-goal)\n           (POST \&quot;/food\&quot; [] post-food))\n&quot; &quot;(query/update-calories! {:calories (+ (read-string \&quot;1300\&quot;) (read-string \&quot;300\&quot;))})&quot; &quot;(ns emo-calorie.routes.emo-calorie-routes\n  (:require [ring.util.response :as response]\n            [compojure.core :refer :all]\n            [emo-calorie.views.emo-calorie-layout :refer [common-layout]]\n            [emo-calorie.models.query-defs :as query]\n            [clojure.data.json :as json])\n  (:import (java.time LocalDateTime)\n           (java.text SimpleDateFormat)\n           (java.util Date)))\n\n(defn index-get [request]\n  (common-layout\n    [:p]))\n\n(defn get-goal [request]\n  (for [goal (query/get-goal-today)]\n    (json/write-str goal)))\n\n(defn post-goal [request]\n  (let [goal (get-in request [:params :goal])]\n    (query/clear-status!)\n    (query/clear-food!)\n    (query/insert-goal-today&lt;! {\n                                :goal     (read-string goal)\n                                :sdate    (.format (SimpleDateFormat. \&quot;MM/dd/yyyy\&quot;) (Date.))\n                                :calories 0})))\n\n(defn post-food [request]\n  (let [name (get-in request [:params :name])\n        calories (get-in request [:params :calories])\n        current (get-in request [:params :current])]\n    (query/insert-food-today&lt;! {\n                                :name name\n                                :calories (read-string calories)})\n    (str \&quot;\&quot; (query/update-calories! {:calories (+ (read-string current) (read-string calories))})) ))\n\n(defroutes emo-calorie-routes\n           (GET \&quot;/\&quot; [] index-get)\n           (GET \&quot;/getgoal\&quot; [] get-goal)\n           (POST \&quot;/goal\&quot; [] post-goal)\n           (POST \&quot;/food\&quot; [] post-food))\n&quot; &quot;(str \&quot;\&quot; (query/update-calories! {:calories (+ (read-string 1200) (read-string 100))}))&quot; &quot;(str (query/update-calories! {:calories (+ (read-string 1200) (read-string 100))}))&quot; &quot;(apply str (query/update-calories! {:calories (+ (read-string 1200) (read-string 100))}))&quot; &quot;(symbol (query/update-calories! {:calories (+ (read-string 1200) (read-string 100))}))&quot; &quot;(query/update-calories! {:calories (+ (read-string 1200) (read-string 100))})&quot; &quot;(str (query/update-calories! {:calories (+ (read-string \&quot;1200\&quot;) (read-string \&quot;100\&quot;))}))&quot;], :remote []}}</component>
   <component name="RunManager" selected="Clojure REPL.REPL for emo-calorie">
     <configuration default="false" name="REPL for emo-calorie" type="ClojureREPL" factoryName="Local" temporary="true">
       <setting name="replType" value="1" />
@@ -823,15 +821,16 @@
       <workItem from="1483644225201" duration="9325000" />
       <workItem from="1483718512469" duration="7823000" />
       <workItem from="1483726674806" duration="5765000" />
+      <workItem from="1483789819961" duration="11296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51697000" />
+    <option name="totallyTimeSpent" value="62993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -852,10 +851,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -887,9 +886,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -937,10 +934,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <marker date="1483729900775" expanded="true" signature="0:405" ph="(ns emo-calorie.routes.emo-calorie-routes ...)" />
-            <marker date="1483729900775" expanded="true" signature="462:551" ph="(defn get-goal ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -966,9 +960,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,10 +1008,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <marker date="1483729900775" expanded="true" signature="0:405" ph="(ns emo-calorie.routes.emo-calorie-routes ...)" />
-            <marker date="1483729900775" expanded="true" signature="462:551" ph="(defn get-goal ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,9 +1034,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,10 +1082,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <marker date="1483729900775" expanded="true" signature="0:405" ph="(ns emo-calorie.routes.emo-calorie-routes ...)" />
-            <marker date="1483729900775" expanded="true" signature="462:551" ph="(defn get-goal ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,9 +1108,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,10 +1164,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1483729900775" expanded="true" signature="0:405" ph="(ns emo-calorie.routes.emo-calorie-routes ...)" />
-            <marker date="1483729900775" expanded="true" signature="462:551" ph="(defn get-goal ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,9 +1172,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1241,48 +1218,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/css/emo-calorie.css">
+    <entry file="file://$PROJECT_DIR$/src/emo_calorie/models/query_defs.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/emo_calorie/handler.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/emo_calorie/models/emo_calories.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <marker date="1483729820450" expanded="true" signature="0:1268" ph="(defproject emo-calorie ...)" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/emo_calorie/routes/emo_calorie_routes.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-          <folding>
-            <marker date="1483729900775" expanded="true" signature="0:405" ph="(ns emo-calorie.routes.emo-calorie-routes ...)" />
-            <marker date="1483729900775" expanded="true" signature="462:551" ph="(defn get-goal ...)" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,26 +1236,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/emo_calorie/models/query_defs.clj">
+    <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="33" />
+        <state relative-caret-position="352">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/css/emo-calorie.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/emo_calorie/views/emo_calorie_layout.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="242">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emo_calorie/models/emo_calories.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emo_calorie/handler.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/emo_calorie/routes/emo_calorie_routes.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/public/js/emo-calorie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="59" column="25" lean-forward="true" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="152" column="40" lean-forward="false" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>

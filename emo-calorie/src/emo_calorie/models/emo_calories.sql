@@ -20,9 +20,36 @@ INSERT INTO status (goal, sdate, calories)
 
 -- name: get-goal-today
 -- selects goal for today
-SELECT goal, sdate
+SELECT goal, sdate, calories
 FROM status;
 
 -- name: clear-status!
 -- deletes all rows from status table
 DELETE FROM status;
+
+-- name: update-calories!
+-- updates calories
+UPDATE status
+SET calories = :calories
+WHERE id = (SELECT id FROM status LIMIT 1);
+
+-- name: insert-food-today<!
+-- inserting food
+INSERT INTO food (name, calories)
+    VALUES (:name, :calories);
+
+-- name: get-food-today
+-- selects food for today
+SELECT id,
+       name,
+       calories
+FROM food;
+
+-- name: delete-food!
+-- deletes food by id
+DELETE FROM food
+  WHERE id = :id;
+
+-- name: clear-food!
+-- delete all rows from food table
+DELETE FROM food;

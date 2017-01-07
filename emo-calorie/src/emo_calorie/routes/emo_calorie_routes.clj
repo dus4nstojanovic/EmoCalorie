@@ -29,14 +29,13 @@
   (let [name (get-in request [:params :name])
         calories (get-in request [:params :calories])
         current (get-in request [:params :current])]
-    (query/insert-food-today<! {
-                                :name name
-                                :calories (read-string calories)})
-    (str "" (query/update-calories! {:calories (+ (read-string current) (read-string calories))}))))
+    (query/update-calories! {:calories (+ (read-string current) (read-string calories))})
+    (str "" (get (query/insert-food-today<! {
+                                             :name name
+                                             :calories (read-string calories)}) :id) )))
 
 (defn get-food [request]
   (json/write-str (query/get-food-today))
-  ;(for [food (query/get-food-today)] (str (json/write-str food) ","))
   )
 
 (defroutes emo-calorie-routes

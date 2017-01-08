@@ -1,7 +1,9 @@
 (ns emo-calorie.views.emo-calorie-layout
   (:require [hiccup.page :refer [html5 include-css include-js]]))
 
-(defn common-layout [& body]
+(defn common-layout
+  "Main application page"
+  [& body]
   (html5
     [:head
      [:title "EmoCalorie"]

@@ -27,6 +27,7 @@ body {
 
 #smiley {
     width: 70vh;
+    height: 60vh;
     transition: width 0.5s;
     cursor:  url(/images/cake.ico), auto;
 }

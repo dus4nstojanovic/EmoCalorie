@@ -1,5 +1,6 @@
 body {
     background-color: #1979ff;
+    min-width: 405px;
 }
 
 #calories-row {
@@ -23,6 +24,15 @@ body {
 #caloriesToday:hover {
     background-color: #cfd050;
     color: #ff4a69;
+}
+
+#goalText {
+    position: absolute;
+    left: 50%;
+    top: 45px;
+    color: white;
+    transform: translateX(-50%);
+    font-size: 12px;
 }
 
 #smiley-row {

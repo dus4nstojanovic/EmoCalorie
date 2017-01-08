@@ -8,12 +8,56 @@ $(document).ready(function() {
     $("#smiley").on("click", addFoodModal);
     $("#addFood").on("click", addFood);
     $("#setCaloriesToday").on("click", setCalories);
+    $("#foodTable").on("click", "tbody>tr", removeFood);
 
     setDefaultValues();
 
     $('[data-toggle="tooltip"]').tooltip();
     setToastrOptions();
 });
+
+function removeFood() {
+    var id = $(this).data("id");
+    var currentNew = Number($("#goalToday").val()) - (Number($("#caloriesToday").text()) + Number(getCaloriesFromRow(id)));
+    $("loading").show();
+
+    $.ajax({
+        url: "/removefood",
+        method: "POST",
+        data: {id: id, current: currentNew}
+    }).done(function () {
+        $("tr[data-id='" + id + "']").remove();
+
+        var $rows = $("#foodTable>tbody>tr");
+        var consumedToday = 0;
+        $("#foodTable>tbody").empty();
+
+        if ($rows.length === 0) {
+            $("#foodTable").hide();
+            setCaloriesToday($("#goalToday").val());
+        } else {
+            $rows.each(function () {
+                var $row = $(this);
+                var idcurrent = $row.data("id");
+                var name = $($row.children("td")[1]).text();
+                var calories = $($row.children("td")[2]).text();
+                consumedToday += Number(calories);
+                addFoodRow(idcurrent, name, calories);
+            });
+            animateOpacity($("#foodTable"), 0, 500);
+            setCaloriesToday(Number($("#goalToday").val()) - consumedToday);
+        }
+    }).fail(function () {
+        toastr.error("Sorry, but we couldn't remove your food.", "Couldn't remove food");
+    }).always(function () {
+       $("loading").hide();
+    });
+}
+
+function getCaloriesFromRow(id) {
+    var $row = $("tr[data-id='" + id + "']");
+    return $($row.children("td")[2]).text();
+}
 
 function setCalories() {
     var $txtCaloriesToday = $("#txtCaloriesToday");
@@ -89,7 +133,7 @@ function setFoodTable() {
     $.ajax({
         url: "/getfood",
     }).done(function (data) {
-        if (data !== "") {
+        if (data !== "" && data !== "[]") {
             $foodTable.show();
             $($.parseJSON(data)).each(function () {
                 var food = this;
@@ -99,7 +143,7 @@ function setFoodTable() {
                 addFoodRow(id, name, calories);
             });
 
-            animateOpacity($foodTable, 0, 1000);
+            animateOpacity($foodTable, 0, 500);
         }
     }).fail(function () {
         toastr.error("Couldn't get foods.", "Error");
@@ -116,7 +160,6 @@ function setCaloriesToday(value) {
 
 function toggleSmileyHover() {
     var $balloon = $("#talking-container");
-
     if($balloon.hasClass("hover")) {
         $balloon.removeClass("hover");
     } else {

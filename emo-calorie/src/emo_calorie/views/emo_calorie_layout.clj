@@ -5,6 +5,7 @@
   (html5
     [:head
      [:title "EmoCalorie"]
+     [:link {:rel "icon" :type "image/x-icon" :href "/images/smiley.ico"}]
      (include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
                   "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
                   "/css/toastr.min.css"
@@ -18,7 +19,7 @@
      [:div.container-fluid
       [:div#calories-row.row
        [:div.col-xs-4.col-xs-offset-4.text-center
-        [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Calories to consume today"} "0"]
+        [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Calories allowed today (kcal) | CLICK TO RESET"} "0"]
         [:input#goalToday {:type "hidden" :value "0"}]]]
       [:div#smiley-row.row
        [:img#smiley {:src "/images/happy.png" :draggable "false" }]
@@ -27,7 +28,8 @@
         [:span#talking-balloon-text "FEED ME!"]
         ]]
       [:div#table-row.row
-       [:table#foodTable.table.table-striped.table-bordered.table-hover.table-condensed
+       [:table#foodTable.table.table-striped.table-hover.table-condensed
+        {:data-toggle "tooltip" :data-placemenet "top" :title "Click on the row to remove food"}
         [:thead
          [:tr
           [:th "Ordinal"]

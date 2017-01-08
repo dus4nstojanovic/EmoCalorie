@@ -34,6 +34,7 @@ function removeFood() {
 
         if ($rows.length === 0) {
             $("#foodTable").hide();
+            $(".tooltip").hide();
             setCaloriesToday($("#goalToday").val());
         } else {
             $rows.each(function () {
@@ -156,6 +157,40 @@ function setCaloriesToday(value) {
     var $caloriesToday = $("#caloriesToday");
     $caloriesToday.text(value);
     animateOpacity($caloriesToday, 0, 1000);
+
+    setEmotion();
+}
+
+function setEmotion() {
+    var caloriesLeft = Number($("#caloriesToday").text());
+    var goal = Number($("#goalToday").val());
+    var percentLeft = caloriesLeft/goal;
+
+    if (percentLeft > 0.8) {
+        setState("#1979ff", "FEED ME!", "/images/happy.png");
+    } else if (percentLeft > 0.6 && percentLeft <= 0.8) {
+        setState("#371cff", "YES PLEASE!", "/images/happy-one-hand.png");
+    } else if (percentLeft > 0.4 && percentLeft <= 0.6) {
+        setState("#6846ff", "IT'S OK!", "/images/fat.png");
+    } else if (percentLeft > 0.2 && percentLeft <= 0.4) {
+        setState("#d534ff", "HM! WHY NOT?", "/images/fatter.png");
+    } else if (percentLeft > 0 && percentLeft <= 0.2) {
+        setState("#ff32a5", "THIS IS LAST!", "/images/angry.png");
+    } else {
+        setState("#ff281d", "STOP!!", "/images/not good.png");
+    }
+
+    animateOpacity($("#smiley"), 0, 400);
+}
+
+function setState(background, text, src) {
+    var $img = $("#smiley");
+    var $ballonText = $("#talking-balloon-text");
+    var $body = $("body");
+
+    $img.attr("src", src);
+    $ballonText.text(text);
+    $body.css("background-color", background);
 }
 
 function toggleSmileyHover() {

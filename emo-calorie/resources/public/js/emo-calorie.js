@@ -1,7 +1,3 @@
-/**
- * Created by Dusan on 02.01.2017..
- */
-
 $(document).ready(function() {
     $("#smiley").on("mouseover", toggleSmileyHover);
     $("#smiley").on("mouseout", toggleSmileyHover);
@@ -9,6 +5,7 @@ $(document).ready(function() {
     $("#addFood").on("click", addFood);
     $("#setCaloriesToday").on("click", setCalories);
     $("#foodTable").on("click", "tbody>tr", removeFood);
+    $("#caloriesToday").on("click", resetForToday);
 
     setDefaultValues();
 
@@ -16,10 +13,28 @@ $(document).ready(function() {
     setToastrOptions();
 });
 
+function resetForToday() {
+
+    $("#loading").show();
+
+    $.ajax({
+        url: "/reset",
+        method: "POST"
+    }).done(function () {
+        setDefaultValues();
+        $("#foodTable>tbody").empty();
+        $("#foodTable").hide();
+    }).fail(function () {
+        toastr.error("Sorry. Please try again latter", "Couldn't reset");
+    }).always(function () {
+        $("#loading").hide();
+    });
+}
+
 function removeFood() {
     var id = $(this).data("id");
     var currentNew = Number($("#goalToday").val()) - (Number($("#caloriesToday").text()) + Number(getCaloriesFromRow(id)));
-    $("loading").show();
+    $("#loading").show();
 
     $.ajax({
         url: "/removefood",
@@ -51,7 +66,7 @@ function removeFood() {
     }).fail(function () {
         toastr.error("Sorry, but we couldn't remove your food.", "Couldn't remove food");
     }).always(function () {
-       $("loading").hide();
+       $("#loading").hide();
     });
 }
 
@@ -83,6 +98,8 @@ function setCalories() {
         $("#setGoalModal").modal("toggle");
         $("#goalToday").val($txtCaloriesToday.val());
         setCaloriesToday($txtCaloriesToday.val());
+
+        $txtCaloriesToday.val("");
     }).fail(function() {
         toastr.error("We couldn't set a goal for today. Go and eat. Enjoy!", "Error");
     }).always(function() {

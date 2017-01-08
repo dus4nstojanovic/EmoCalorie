@@ -20,6 +20,7 @@
       [:div#calories-row.row
        [:div.col-xs-4.col-xs-offset-4.text-center
         [:span#caloriesToday {:data-toggle "tooltip" :data-placement "bottom" :title "Calories allowed today (kcal) | CLICK TO RESET"} "0"]
+        [:span#goalText "Goal | kcal"]
         [:input#goalToday {:type "hidden" :value "0"}]]]
       [:div#smiley-row.row
        [:img#smiley {:src "/images/happy.png" :draggable "false" }]

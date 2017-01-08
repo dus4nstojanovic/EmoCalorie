@@ -174,6 +174,7 @@ function setCaloriesToday(value) {
     var $caloriesToday = $("#caloriesToday");
     $caloriesToday.text(value);
     animateOpacity($caloriesToday, 0, 1000);
+    animateOpacity($("#goalText"), 0, 1000);
 
     setEmotion();
 }

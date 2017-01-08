@@ -8,15 +8,21 @@
            (java.text SimpleDateFormat)
            (java.util Date)))
 
-(defn index-get [request]
+(defn index-get
+  "Index page"
+  [request]
   (common-layout
     [:p]))
 
-(defn get-goal [request]
+(defn get-goal
+  "Gets goal for today"
+  [request]
   (for [goal (query/get-goal-today)]
     (json/write-str goal)))
 
-(defn post-goal [request]
+(defn post-goal
+  "Sets goal for today and deletes all status and foods"
+  [request]
   (let [goal (get-in request [:params :goal])]
     (query/clear-status!)
     (query/clear-food!)
@@ -25,7 +31,9 @@
                                 :sdate    (.format (SimpleDateFormat. "MM/dd/yyyy") (Date.))
                                 :calories 0})))
 
-(defn post-food [request]
+(defn post-food
+  "Adds food and updates calories"
+  [request]
   (let [name (get-in request [:params :name])
         calories (get-in request [:params :calories])
         current (get-in request [:params :current])]
@@ -34,16 +42,22 @@
                                              :name name
                                              :calories (read-string calories)}) :id) )))
 
-(defn get-food [request]
+(defn get-food
+  "Gets foods inserted today"
+  [request]
   (json/write-str (query/get-food-today)))
 
-(defn remove-food [request]
+(defn remove-food
+  "Removes food by specified id and updates calories"
+  [request]
   (let [id (get-in request [:params :id])
         current (get-in request [:params :current])]
     (query/update-calories! {:calories (read-string current)})
     (str "" (query/delete-food<! {:id (read-string id)}))))
 
-(defn reset [request]
+(defn reset
+  "Deletes all foods and statuses"
+  [request]
   (query/clear-status!)
   (str "" (query/clear-food!)))
 

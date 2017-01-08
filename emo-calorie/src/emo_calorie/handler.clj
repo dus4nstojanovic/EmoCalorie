@@ -5,7 +5,9 @@
             [emo-calorie.routes.emo-calorie-routes :refer [emo-calorie-routes]]
             [emo-calorie.models.query-defs :as query]))
 
-(defn init []
+(defn init
+  "Creates tables if does not exists"
+  []
   (query/create-status-table-if-not-exists!)
   (query/create-food-table-if-not-exists!))
 

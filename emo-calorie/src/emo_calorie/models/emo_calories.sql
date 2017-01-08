@@ -45,7 +45,7 @@ SELECT id,
        calories
 FROM food;
 
--- name: delete-food!
+-- name: delete-food<!
 -- deletes food by id
 DELETE FROM food
   WHERE id = :id;

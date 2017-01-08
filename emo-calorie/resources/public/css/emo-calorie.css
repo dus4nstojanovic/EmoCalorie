@@ -1,5 +1,5 @@
 body {
-    background-color: #fffbcb;
+    background-color: #1979ff;
 }
 
 #calories-row {
@@ -17,6 +17,7 @@ body {
     min-width: 90px;
     min-height: 65.56px;
     display: inline-block;
+    cursor: pointer;
 }
 
 #smiley-row {
@@ -72,6 +73,7 @@ body {
 
 #foodTable {
     display: none;
+    font-size: 20px;
 }
 
 #foodTable th {
@@ -80,16 +82,63 @@ body {
 }
 
 #foodTable td {
-    background-color: white;
+    background-color: #dbedff;
 }
 
 #foodTable th, #foodTable td {
     text-align: center;
 }
 
-#foodTable>tbody>tr>td:nth-of-type(2)
-{
+#foodTable>thead>tr>th:nth-of-type(2) {
     text-align: left;
+}
+
+#foodTable>tbody>tr>td:nth-of-type(2) {
+    text-align: left;
+}
+
+#foodTable>thead>tr>th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+#foodTable>thead>tr>th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+#foodTable>tbody>tr:last-of-type>td:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+#foodTable>tbody>tr:last-of-type>td:last-of-type {
+    border-bottom-right-radius: 10px;
+}
+
+#foodTable>tbody>tr>td:first-of-type {
+    width: 30px;
+}
+
+#foodTable>tbody>tr>td:last-of-type {
+    width: 60px;
+    border-right: 0;
+    font-weight: bolder;
+    color: #04477c;
+}
+
+#foodTable>thead>tr>th:last-of-type {
+    border-right: 0;
+}
+
+#foodTable td, #foodTable th {
+    border-right: 1px solid #cfcfcf;
+}
+
+#foodTable>tbody>tr:nth-of-type(2n + 1)>td {
+    background-color: #ffffff;
+}
+
+#foodTable>tbody>tr:hover td {
+    cursor: pointer;
+    background-color: #ffcbcc;
 }
 
 .margin-r-5 {

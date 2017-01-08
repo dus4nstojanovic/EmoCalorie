@@ -43,10 +43,15 @@
     (query/update-calories! {:calories (read-string current)})
     (str "" (query/delete-food<! {:id (read-string id)}))))
 
+(defn reset [request]
+  (query/clear-status!)
+  (str "" (query/clear-food!)))
+
 (defroutes emo-calorie-routes
            (GET "/" [] index-get)
            (GET "/getgoal" [] get-goal)
            (GET "/getfood" [] get-food)
            (POST "/goal" [] post-goal)
            (POST "/food" [] post-food)
-           (POST "/removefood" [] remove-food))
+           (POST "/removefood" [] remove-food)
+           (POST "/reset" [] reset))

@@ -20,6 +20,11 @@ body {
     cursor: pointer;
 }
 
+#caloriesToday:hover {
+    background-color: #cfd050;
+    color: #ff4a69;
+}
+
 #smiley-row {
     padding-top: 50px;
     text-align: center;

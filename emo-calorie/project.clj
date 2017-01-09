@@ -1,6 +1,6 @@
-(defproject emo-calorie "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+(defproject emo-calorie "1.0.0"
+  :description "Emo-calorie - emotional calories counter"
+  :url "http://localhost:[PORT]/"
   :min-lein-version "2.5.0"
 
   :ring {:handler emo-calorie.handler/app

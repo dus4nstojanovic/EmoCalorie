@@ -14,9 +14,9 @@ You will need [Leiningen][] 2.0.0 or above installed.
 
 [leiningen]: https://github.com/technomancy/leiningen
 
-You will need [PosgreSQL] installed.
+You will need [Posgresql] installed.
 
-[postgresql]: https://www.postgresql.org/
+[posgresql]: https://www.postgresql.org
 
 You will need two databases created (for running and testing).
 You can change database names and passwords in profiles.clj

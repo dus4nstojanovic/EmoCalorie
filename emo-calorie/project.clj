@@ -21,7 +21,7 @@
 
   :profiles {:test-local {:dependencies [[midje "1.8.3"]
                                          [javax.servlet/servlet-api "2.5"]
-                                         [ring-mock "0.3.0"]]
+                                         [ring/ring-mock "0.3.0"]]
 
                           :plugins [[lein-midje "3.2.1"]]}
              :test-env-vars {}
